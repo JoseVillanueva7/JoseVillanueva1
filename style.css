@@ -1,5 +1,5 @@
 .fondo {
-    background-image: url(Fondo.png);
+    background-image: url(./fotos/Fondo.png);
     padding-left: 20%;
     padding-right: 20%;
     
@@ -16,7 +16,13 @@ nav {
     background-color: rgba(73, 73, 73, 0.063);
     backdrop-filter: blur(50px);
     border-radius: 60px;
-    padding: 3px;
+    padding: 10px;
+    position: fixed;
+    left: 50%; 
+    transform: translateX(-50%); 
+    z-index: 999;
+    display: inline-flex;
+    
 }
 
 a {
@@ -27,20 +33,22 @@ a {
     font-weight: bold;
     font-size: large;
     transition: color 0.3s;
+    cursor: pointer;
+    
 }
 
 a:hover {
-    color: #3218d8; 
+    color: #3218d8a0; 
 }
 
-.presentacion {
+#sobreMi {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding: 50px;
 }
 
-img {
+.jv {
     width: 12%;
     height: 70px;
     border-radius: 50%;
@@ -50,18 +58,57 @@ img {
 h1 {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 60px;
     color: rgba(255, 255, 255, 0.708); 
-    padding: 20px;
+    padding: 35px;
 }
 
 p {
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
-    font-size: medium;
+    font-size: 20px;
     color: rgba(255, 255, 255, 0.708); 
+}
+
+span {
+    color: yellow;
+}
+
+#redes {
+    padding: 50px 30px 30px 30px;
+}
+
+h2 {
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: bold;
+    font-size: 60px;
+    color: rgba(255, 255, 255, 0.708); 
+    padding: 5px;
 }
 
 
 
+.boton {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    backdrop-filter: blur(50px);
+    color: #ffffff; 
+    text-decoration: none;
+    border: solid;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    
+}
 
+.boton:hover {
+    color: #3218d8a0;
+}
+
+.logo {
+    height: 20px;
+    width: 20px;
+    padding-right: 10px;
+    border-radius: 5%;
+}
